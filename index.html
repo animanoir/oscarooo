@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>〇scar.〇〇〇</title>
+  <style>
+    body {
+      background-image: url("./pics/metamodernidad.png");
+      background-repeat: repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>〇〇〇〇 8</h1>
+
+  <script>
+    var msg = document.title;
+    // Speed in ms
+    var speed = 500;
+    var pos = 0;
+
+    function moveTitle() {
+      var ml = msg.length;
+
+      title = msg.substr(pos, ml) + msg.substr(0, pos);
+      document.title = title;
+
+      pos++;
+      if (pos > ml) pos = 0;
+      window.setTimeout("moveTitle()", speed);
+    }
+
+    moveTitle();
+  </script>
+</body>
+
+</html>
