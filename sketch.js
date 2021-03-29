@@ -21,15 +21,15 @@ const acerca = [
   'digital art',
   'interactive',
   'design',
-  'freelance web developer',
-  'desarrollo web',
-  'diseño interactivo',
-  'web interactiva',
-  'programador',
-  'cyberpunk',
+  'marxism',
+  'web',
+  'ethereal',
+  'flux',
+  '@',
+  'utopia',
   'futurism',
 ]
-let menu = ['.about', '.works', '.contact', 'mx.qro 2021']
+let menu = ['.about', '.works', '.contact', '💔 2021']
 let acercaIndice = 0
 let menuIndice = 0
 let menuY
@@ -115,6 +115,8 @@ function renderRectMenu() {
   noStroke()
   fill(255)
   rect(windowWidth / 2, 0, windowWidth / 2, windowHeight)
+  textAlign(RIGHT)
+
   if (mouseX >= windowWidth / 2) {
     push()
     cursor(HAND)
