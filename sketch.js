@@ -115,7 +115,7 @@ function renderRectMenu() {
   noStroke()
   fill(255)
   rect(windowWidth / 2, 0, windowWidth / 2, windowHeight)
-  textAlign(RIGHT)
+  textAlign(LEFT)
 
   if (mouseX >= windowWidth / 2) {
     push()
